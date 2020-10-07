@@ -18,6 +18,11 @@ var number2 = parseInt(prompt("Enter another number:"));
 alert(multiply(number1, number2));
 
 $(document).ready(function() {
+  $("form#add").submit(function(event) {
+  event.preventDefault(); });
+  });
+
+$(document).ready(function() {
   var number1 = parseInt($("#add1").val());
   var number2 = parseInt($("#add2").val());
   alert(add(number1, number2));
